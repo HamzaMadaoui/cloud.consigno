@@ -1,0 +1,22 @@
+{
+  "name": "consigno-cloud-qa",
+  "version": "1.0.0",
+  "description": "Suite de tests automatisés Playwright pour ConsignO Cloud – Évaluation technique QA Portage CyberTech",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:auth": "playwright test tests/01-auth.spec.ts",
+    "test:dashboard": "playwright test tests/02-dashboard.spec.ts",
+    "test:projects": "playwright test tests/03-project-creation.spec.ts",
+    "test:account": "playwright test tests/04-user-account.spec.ts",
+    "test:templates": "playwright test tests/05-templates.spec.ts",
+    "test:access": "playwright test tests/06-navigation-and-access-control.spec.ts",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.5",
+    "dotenv": "^17.3.1",
+    "typescript": "^5.9.3"
+  }
+}
